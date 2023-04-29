@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Roboto", sans-serif ;
+}
+
+/* ============ */
+/* HEADER */
+/* ============ */
+
+
+.header
+{
+    width: 100%;
+    min-height: 100px;
+    
+    position: absolute;
+}
+
+.container
+{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+p{
+    font-size: 18px;
+}
+
+img
+{
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.container_logo
+{
+    width: 100px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container_logo img{
+    width: 50px;
+}
+
+nav a
+{
+
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all ease 300ms;
+    border-bottom: 2px solid transparent;
+    
+   
+}
+
+nav a:hover
+{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.contenedor_hero    
+{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0 ,0, 0.5),rgba(0, 0 ,0, 0.5) ),     url(/img/imagen_principal.jpg); 
+     background-size: cover;
+    background-position: center;
+    color: #fff;
+    
+
+}
+.hero
+{
+    max-width: 1000px;
+    margin: auto;
+    /* border: 1px solid #fff; */
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    gap: 7px;
+    
+}
+
+.hero h2{
+    font-size: 3em;
+    font-weight: 400;
+    font-family: 'Indie Flower', sans-serif;
+}
+
+/* ================= */
+/* BLOG */
+/* ================== */
+
+.blog
+{
+    max-width: 1000px;
+    margin: 40px auto;
+    padding:  10px;
+    /* border: 1px solid #000; */
+}
+
+.container_blog
+{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    
+
+    
+}
+
+.container_blog img:hover
+{
+    transform: scale(1.05);
+    transition: all 400ms;
+    box-shadow: none;
+   
+}
+
+
+.container_blog:nth-last-child(even){
+    
+    flex-direction: row-reverse;    
+    
+}
+
+.title_blog
+{
+    
+    display: inline-block;
+    font-size: 2rem;
+}
+
+
+
+.imagen_blog
+{
+    width: 400px;
+    margin-top: 10px;
+    
+}
+.texto_blog
+{
+    width: 400px;
+}
+
+.imagen_blog img{
+    border-radius: 12px;
+}
+
+.title-3
+{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+
+.texto_blog p{
+    text-align: justify;
+}
+
+.leer_mas
+{
+    
+    margin: 10px 0px;
+    padding: 8px 18px;
+    outline: none;
+    color: #fff;
+    background: #c76503;
+    border: none;
+    font-size: 1rem;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    cursor: pointer;
+}
+.leer_mas:hover
+{
+    background: #a95603;
+}
+
+/* ================= */
+/* PARALLAX */
+/* ================== */
+
+.parallax
+{
+    position: relative;
+    width: 100%;
+    height: 550px;
+    bottom: 0;
+    background-image: url('https://source.unsplash.com/random/1920×1080/?pets');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.wave
+{
+    position: absolute;
+    bottom: 0;
+    
+}
+
+
+/* ================= */
+/* ADOPTAME */
+/* ================== */
+
+
+.adoptame
+{
+    max-width: 1200px;
+    margin:5px auto;
+    min-height: 400px;
+    padding: 0px 20px;
+}
+
+.adoptame_title
+{
+    font-size: 3rem;
+    margin: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+.adoptame_texto
+{
+    text-align:center;
+}
+
+
+/* ================= */
+/* FOOTER */
+/* ================== */
+
+.footer
+{
+    width: 100%;
+    min-height: 120px;
+    background: #3b3939;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+.copy
+{
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+ @media screen and (max-width: 800px) {
+
+    .container
+    {
+
+        flex-direction: column;
+    }
+    
+ }
